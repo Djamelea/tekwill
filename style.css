@@ -1,3 +1,87 @@
-h1 {
-    color: red
+/* Selector */
+/* tag selector */
+
+body {
+    background-color: #c0c0c0;
+}
+
+section {
+    width: 200px;
+    background-color: #555;
+}
+
+input {
+    height: 24px;
+}
+
+/* class selector */
+
+.submit-button {
+    background-color: #bcc3ea;
+}
+
+/* id selector */
+
+#form-section {
+    border-radius: 6px;
+}
+
+/* combined selectors */
+input.submit-button {
+    color: #fff;
+}
+
+section label {
+    color: white;
+}
+
+/* Colors */
+/* rgb (red, green, blue)*/
+/* rgb (255, 255, 255) - white */
+/* rgb (0, 0, 0) - black */
+
+/* rgba (red, green, blue, alpha) */
+/* rgbs(255,255,255, 1) - white with 100% opacity */
+
+/* hexadecimal */
+/* #fffff - white  */
+
+/* Pseudoelements ::before ::after */
+.submit-button::after {
+    content: '\2192';
+}
+
+.submit-button::before {
+    content: '\2190';
+}
+
+/* Pseudo-classes :hover :active :focus :first-child :last-child :nth-child(3, even, odd, 3n) */
+
+.submit-button:hover {
+    background-color: #a6afe3;
+}
+
+.submit-button:active {
+    background-color: #737cb0;
+}
+
+.submit-button:focus {
+    background-color: #6971a1;
+}
+
+/* li:first-child {
+    margin-top: 100px;
+}
+
+:last-child {
+    margin-bottom: 100px;
+} */
+
+li:nth-child(odd) {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+body {
+    font-size: 32px;
 }
